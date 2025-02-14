@@ -4,7 +4,7 @@ import css from "../../public/css.jpg";
 import javascript from "../../public/javascript.png";
 import TailWindCss from "../../public/Tal.png";
 import c0 from "../../public/c.png";
-import c1 from "../../public/c+++.jpg";
+import c1 from "../../public/c++lang.png";
 import Bootstrap from "../../public/Bot.jpg";
 function Experiance() {
   const cardItem = [
