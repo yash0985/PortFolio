@@ -1,54 +1,71 @@
 import React from "react";
-import html from "../../public/html.png";
-import css from "../../public/css.jpg";
-import javascript from "../../public/javascript.png";
-import TailWindCss from "../../public/Tal.png";
-import c0 from "../../public/c.png";
-import c1 from "../../public/c++lang.png";
-import Bootstrap from "../../public/Bot.jpg";
+import html from "../assets/html.png";
+import css from "../assets/css.png";
+import gitHub from "../assets/GitHub.png";
+import git from "../assets/Git.png";
+import tailWind from "../assets/Tailwind.png";
+import bootsrap from "../assets/Bootsrap.png";
+import responsive from "../assets/Responsive.png";
+import api from "../assets/API2.png";
+import cloud from "../assets/cloud.png";
+import bugFree from "../assets/Bug_free.png";
 function Experiance() {
   const cardItem = [
     {
       id: 1,
       logo: html,
-      name: "HTML",
+      name: "HTML5",
     },
     {
       id: 2,
       logo: css,
-      name: "CSS",
+      name: "CSS3",
     },
     {
       id: 3,
-      logo: TailWindCss,
-      name: "TailWind CSS",
+      logo: gitHub,
+      name: "GitHub",
     },
     {
       id: 4,
-      logo: javascript,
-      name: "JavaScript",
+      logo: git,
+      name: "Git",
     },
     {
       id: 5,
-      logo: c1,
-      name: "C++",
+      logo: tailWind,
+      name: "TailWind CSS",
     },
     {
       id: 6,
-      logo: c0,
-      name: "C",
+      logo: bootsrap,
+      name: "Bootstrap",
     },
     {
       id: 7,
-      logo: Bootstrap,
-      name: "Bootstrap",
+      logo: responsive,
+      name: "Friendly UI",
+    },
+    {
+      id: 8,
+      logo: api,
+      name: "Rest API",
+    },
+    {
+      id: 9,
+      logo: cloud,
+      name: "CLOUD",
+    },
+    {
+      id: 10,
+      logo: bugFree,
+      name: "BugFree Code",
     },
   ];
   return (
     <div
       name="Experiance"
-      className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16"
-    >
+      className="max-w-screen-2xl container mx-auto px-4 md:px-20 py-16 bg-white dark:bg-gray-900 text-black dark:text-white transition duration-500"> 
       <div>
         <h1 className="text-3xl font-bold mb-5">Experiance</h1>
         <p className="  ">
@@ -58,8 +75,7 @@ function Experiance() {
           {cardItem.map(({ id, logo, name }) => (
             <div
               className=" flex flex-col items-center justify-center border-[2px] rounded-full md:w-[200px] md:h-[200px] shadow-md p-1 cursor-pointer hover:scale-110 duration-300"
-              key={id}
-            >
+              key={id}>
               <img src={logo} className="w-[150px] rounded-full" alt="" />
               <div>
                 <div className="">{name}</div>

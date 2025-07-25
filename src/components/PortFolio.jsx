@@ -1,52 +1,66 @@
 import React from "react";
-import mongoDB from "../../public/mongodb.jpg";
-import express from "../../public/express.png";
-import reactjs from "../../public/reactjs.png";
-import c0 from "../../public/c.jpg";
-import c1 from "../../public/c++ (1).jpg";
-import nodejs from "../../public/node.png";
+import react from "../assets/react.png";
+import redux from "../assets/Readux.png";
+import Javascript from "../assets/JavaScript.png";
+import node from "../assets/Node.png";
+import mongodb from "../assets/MongoDB.png";
+import sql from "../assets/sql.png";
+import c1 from "../assets/c++.png";
+import c2 from "../assets/c_lang.png";
+
+
 function PortFolio() {
   const cardItem = [
     {
       id: 1,
-      logo: mongoDB,
-      name: "MongoDB",
-    },
-    {
-      id: 2,
-      logo: express,
-      name: "Express",
-    },
-    {
-      id: 3,
-      logo: reactjs,
+      logo: react,
       name: "ReactJS",
     },
     {
+      id: 2,
+      logo: redux,
+      name: "Redux",
+    },
+    {
+      id: 3,
+      logo: Javascript,
+      name: "JavaScript",
+    },
+    {
       id: 4,
-      logo: nodejs,
+      logo: node,
       name: "NodeJS",
     },
     {
       id: 5,
-      logo: c0,
-      name: "C",
+      logo: mongodb,
+      name: "MongoDB",
     },
     {
       id: 6,
+      logo: sql,
+      name: "MySQL",
+    },
+    {
+      id: 7,
       logo: c1,
       name: "C++",
+    },
+    {
+      id: 8,
+      logo: c2,
+      name: "C",
     },
   ];
   return (
     <div
       name="Portfolio"
-      className="max-w-screen-2xl container mx-auto px-4 md:px-20 mt-10"
+      className="max-w-screen-2xl container mx-auto px-4 md:px-20 pt-10 bg-white dark:bg-gray-900 text-black dark:text-white transition duration-500 "
     >
       <div>
         <h1 className="text-3xl font-bold mb-5">PortFolio</h1>
         <span className=" underline font-semibold">Featured Projects</span>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-3 my-5">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-3 py-5">
           {cardItem.map(({ id, logo, name }) => (
             <div
               className="md:w-[300px] md:h-[300px] border-[2px] rounded-lg shadow-lg p-1 cursor-pointer hover:scale-110 duration-300"
@@ -59,7 +73,7 @@ function PortFolio() {
               />
               <div>
                 <div className="px-2 font-bold text-xl mb-2">{name}</div>
-                <p className="px-2 text-gray-700">
+                <p className="px-2 text-gray-700 dark:text-white">
                 I have made small project on this language.
                 </p>
               </div>
@@ -75,6 +89,7 @@ function PortFolio() {
           ))}
         </div>
       </div>
+      
     </div>
   );
 }
