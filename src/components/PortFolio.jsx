@@ -5,7 +5,7 @@ import Javascript from "../assets/JavaScript.png";
 import node from "../assets/Node.png";
 import mongodb from "../assets/MongoDB.png";
 import sql from "../assets/sql.png";
-import c1 from "../assets/c++.png";
+import c1 from "../assets/c_lng2.png";
 import c2 from "../assets/c_lang.png";
 
 
