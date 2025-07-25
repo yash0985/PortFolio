@@ -1,0 +1,12 @@
+@keyframes infinite-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.infinite-spinner {
+  animation: infinite-spin 3s linear infinite; /* Slow (3s), smooth */
+}

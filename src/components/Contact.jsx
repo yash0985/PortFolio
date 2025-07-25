@@ -27,7 +27,7 @@ function Contact() {
   };
   return (
     <>
-    <hr />
+      <hr />
       <div
         name="Contact"
         className="max-w-screen-2xl container mx-auto px-4 md:px-20 py-16 bg-white dark:bg-gray-900 text-black dark:text-white transition duration-500">
@@ -36,7 +36,10 @@ function Contact() {
         <div className=" flex flex-col items-center justify-center mt-5">
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="w-96 px-8 py-6 rounded-xl bg-slate-200 dark:bg-gray-800 transition duration-500">
+            className="w-full max-w-md px-4 sm:px-8 py-6 rounded-xl bg-slate-200 dark:bg-gray-800"
+            data-aos="flip-right"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out">
             <h1 className="text-xl font-semibold mb-4 text-black dark:text-white">
               Send Your Message
             </h1>
