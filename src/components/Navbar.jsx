@@ -11,6 +11,12 @@ function Navbar() {
   // Dark mode state from localStorage
   const [darkMode, setDarkMode] = useState(() => {
     const saved = localStorage.getItem("theme");
+
+    // 👇 Default to "dark" if nothing is saved
+    if (saved === null) {
+      localStorage.setItem("theme", "dark");
+      return true;
+    }
     return saved === "dark";
   });
 
@@ -54,15 +60,13 @@ function Navbar() {
               {navItems.map(({ id, text }) => (
                 <li
                   className="hover:scale-105 duration-200 cursor-pointer"
-                  key={id}
-                >
+                  key={id}>
                   <Link
                     to={text}
                     smooth={true}
                     duration={500}
                     offset={-70}
-                    activeClass="active"
-                  >
+                    activeClass="active">
                     {text}
                   </Link>
                 </li>
@@ -73,8 +77,7 @@ function Navbar() {
             <button
               onClick={() => setDarkMode(!darkMode)}
               className="text-xl p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition"
-              title="Toggle Theme"
-            >
+              title="Toggle Theme">
               {darkMode ? <FaSun /> : <FaMoon />}
             </button>
 
@@ -92,16 +95,14 @@ function Navbar() {
               {navItems.map(({ id, text }) => (
                 <li
                   className="hover:scale-105 duration-200 font-semibold cursor-pointer"
-                  key={id}
-                >
+                  key={id}>
                   <Link
                     onClick={() => setMenu(!menu)}
                     to={text}
                     smooth={true}
                     duration={500}
                     offset={-70}
-                    activeClass="active"
-                  >
+                    activeClass="active">
                     {text}
                   </Link>
                 </li>
