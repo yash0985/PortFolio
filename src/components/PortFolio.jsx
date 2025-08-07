@@ -77,13 +77,13 @@ function PortFolio() {
                   I have made small project on this language.
                 </p>
               </div>
-              <div className=" px-6 py-4 space-x-3 justify-around">
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded">
-                  Video
-                </button>
-                <button className="bg-green-500 hover:bg-green-700 text-white font-bold px-4 py-2 rounded">
+              <div className=" px-6 py-4">
+             
+               <a href="https://github.com/yash0985">
+                 <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded">
                   Source code
                 </button>
+               </a>
               </div>
             </div>
           ))}

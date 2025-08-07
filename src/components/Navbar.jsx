@@ -36,7 +36,8 @@ function Navbar() {
     { id: 2, text: "About" },
     { id: 3, text: "Portfolio" },
     { id: 4, text: "Experiance" },
-    { id: 5, text: "Contact" },
+    { id: 5, text: "Project" },
+    { id: 6, text: "Contact" },
   ];
 
   return (
