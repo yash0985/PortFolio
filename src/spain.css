@@ -18,7 +18,6 @@
   overflow: hidden;
 }
 
-
 .panel {
   width: 100%;
   height: 100vh;
@@ -26,5 +25,21 @@
 
 .pin-spacer {
   height: 200vh;
+}
+
+.mobile-line {
+  transform-origin: left;
+}
+.title-line {
+  display: block; /* or inline-block */
+  transform-origin: left center;
+}
+
+/* Mobile adjustments */
+@media (max-width: 1023px) {
+  .panel {
+    height: auto; /* Let height adjust to content */
+    padding-bottom: 2rem;
+  }
 }
 
